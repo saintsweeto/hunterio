@@ -1,0 +1,24 @@
+{
+    "name": "saintsweeto/hunterio",
+    "description": "A PHP wrapper for Hunter.io v2 API",
+    "keywords": ["hunterio"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "EJ Ramos",
+            "email": "emjohnramos@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hiraya\\": "src/"
+        }
+    }
+}
