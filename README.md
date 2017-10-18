@@ -25,14 +25,7 @@ The Domain Search returns all the email addresses found using one given domain n
 ```
 use Hiraya\Hunter;
 
-$hunter->searchDomain('stripe.com');
-```
-
-#### Domain Search
-  
-This API Call returns all the email addresses found using one given domain name, with sources.
-```
-$hunter->searchDomain('stripe.com');
+$hunter->searchDomain('hirayasolutions.com');
 ```
 
 #### Email Finder
