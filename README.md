@@ -23,8 +23,6 @@ $hunter = new Hunter(API_KEY);
   
 The Domain Search returns all the email addresses found using one given domain name, with sources.
 ```
-use Hiraya\Hunter;
-
 $hunter->searchDomain('hirayasolutions.com');
 ```
 
