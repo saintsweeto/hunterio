@@ -7,7 +7,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installation
 ```
-composer require saintsweeto/hunterio
+composer require saintsweeto/hunterio dev-master
 ```
 
 ### Initialization
