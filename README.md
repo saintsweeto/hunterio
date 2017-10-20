@@ -14,7 +14,7 @@ composer require saintsweeto/hunterio dev-master
 ```
 use Hiraya\Hunter;
 
-$hunter = new Hunter(API_KEY);
+$hunter = new Hunter(APIKEY);
 ```
 
 ### API Calls
