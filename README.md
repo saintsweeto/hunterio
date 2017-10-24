@@ -8,8 +8,8 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installation
 ```
 "require": {
-        "saintsweeto/hunterio": "~1.0"
-    }
+    "saintsweeto/hunterio": "~1.0"
+}
 ```
 
 ### Initialization
