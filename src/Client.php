@@ -18,7 +18,7 @@ class Client extends GuzzleClient
 
     /**
      * Client constructor.
-     * @param array $apiKey
+     * @param string $apiKey
      */
     public function __construct($apiKey)
     {
