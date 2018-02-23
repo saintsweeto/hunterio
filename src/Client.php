@@ -6,7 +6,8 @@ use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\RequestException;
 
 /**
- * Class Client
+ * Class Client.
+ *
  * @package Hiraya
  */
 class Client extends GuzzleClient
@@ -18,6 +19,7 @@ class Client extends GuzzleClient
 
     /**
      * Client constructor.
+     *
      * @param string $apiKey
      */
     public function __construct($apiKey)
@@ -28,7 +30,7 @@ class Client extends GuzzleClient
     }
 
     /**
-     * Sets the URL Prefix
+     * Sets the URL Prefix.
      *
      * @param $prefix
      */
@@ -38,20 +40,17 @@ class Client extends GuzzleClient
     }
 
     /**
-     * Sets the URL parameters
+     * Sets the URL parameters.
      *
      * @param $parameters
      */
     public function setParameters($parameters)
     {
         if ( ! empty($parameters))  {
-
             $this->parameters = array_merge($parameters, [
                 'api_key' => $this->apiKey
             ]);
-        }
-        else {
-
+        } else {
             $this->parameters = [
                 'api_key' => $this->apiKey
             ];
@@ -59,10 +58,10 @@ class Client extends GuzzleClient
     }
 
     /**
-     * Generates the API response
+     * Generates the API response.
      *
-     * @param $prefix
-     * @param array $parameters
+     * @param  $prefix
+     * @param  array $parameters
      * @return string
      */
     public function retrieve($prefix, $parameters = [])
@@ -71,16 +70,11 @@ class Client extends GuzzleClient
         $this->setParameters($parameters);
 
         try {
-
-            $response = $this->request('GET', $this->url, [
+            return $this->request('GET', $this->url, [
                 'query' => $this->parameters
             ])->getBody()->getContents();
-
         } catch (RequestException $e) {
-
-            $response = $e->getResponse()->getBody()->getContents();
+            return $e->getResponse()->getBody()->getContents();
         }
-
-        return $response;
     }
 }
