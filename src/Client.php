@@ -32,7 +32,7 @@ class Client extends GuzzleClient
     /**
      * Sets the URL Prefix.
      *
-     * @param $prefix
+     * @param string $prefix
      */
     public function setUrl($prefix)
     {
@@ -42,7 +42,7 @@ class Client extends GuzzleClient
     /**
      * Sets the URL parameters.
      *
-     * @param $parameters
+     * @param array $parameters
      */
     public function setParameters($parameters)
     {
@@ -60,7 +60,7 @@ class Client extends GuzzleClient
     /**
      * Generates the API response.
      *
-     * @param  $prefix
+     * @param  string $prefix
      * @param  array $parameters
      * @return string
      */
