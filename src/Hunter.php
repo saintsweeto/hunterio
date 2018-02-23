@@ -3,13 +3,15 @@
 namespace Hiraya;
 
 /**
- * Class Hunter
+ * Class Hunter.
+ *
  * @package Hiraya
  */
 class Hunter extends Client
 {
     /**
      * Hunter constructor.
+     *
      * @param string $apiKey
      */
     public function __construct($apiKey)
@@ -18,9 +20,9 @@ class Hunter extends Client
     }
 
     /**
-     * Returns all the email addresses from a domain
+     * Returns all the email addresses from a domain.
      *
-     * @param $domain
+     * @param  string $domain
      * @return string
      */
     public function searchDomain($domain)
@@ -35,11 +37,11 @@ class Hunter extends Client
     }
 
     /**
-     * Generates the most likely email address from a domain
+     * Generates the most likely email address from a domain.
      *
-     * @param $domain
-     * @param $first_name
-     * @param $last_name
+     * @param  string $domain
+     * @param  string $first_name
+     * @param  string $last_name
      * @return string
      */
     public function findEmailByDomain($domain, $first_name, $last_name)
@@ -56,10 +58,10 @@ class Hunter extends Client
     }
 
     /**
-     * Generates the most likely email address from a company
+     * Generates the most likely email address from a company.
      *
-     * @param $company
-     * @param $full_name
+     * @param  string $company
+     * @param  string $full_name
      * @return string
      */
     public function findEmailByCompany($company, $full_name)
@@ -75,9 +77,9 @@ class Hunter extends Client
     }
 
     /**
-     * Verifies the deliverability of an email address
+     * Verifies the deliverability of an email address.
      *
-     * @param $email
+     * @param  string $email
      * @return string
      */
     public function verifyEmail($email)
@@ -92,9 +94,9 @@ class Hunter extends Client
     }
 
     /**
-     * Counts how many email addresses are there in a domain
+     * Counts how many email addresses are there in a domain.
      *
-     * @param $domain
+     * @param  string $domain
      * @return string
      */
     public function countEmail($domain)
@@ -109,7 +111,7 @@ class Hunter extends Client
     }
 
     /**
-     * Retrieves information regarding your account
+     * Retrieves information regarding your account.
      *
      * @return string
      */
