@@ -21,15 +21,18 @@ class Hunter extends Client
      * Returns all the email addresses from a domain
      *
      * @param $domain
+     * @param $options
      * @return string
      */
-    public function searchDomain($domain)
+    public function searchDomain($domain, $options = array())
     {
         $prefix = 'domain-search';
 
         $parameters = [
-            'domain' => $domain,
+            'domain'  => $domain,
         ];
+
+        $parameters = array_merge($parameters, $options);
 
         return $this->retrieve($prefix, $parameters);
     }
@@ -95,15 +98,18 @@ class Hunter extends Client
      * Counts how many email addresses are there in a domain
      *
      * @param $domain
+     * @param $options
      * @return string
      */
-    public function countEmail($domain)
+    public function countEmail($domain, $options = array())
     {
         $prefix = 'email-count';
 
         $parameters = [
             'domain' => $domain,
         ];
+
+        $parameters = array_merge($parameters, $options);
 
         return $this->retrieve($prefix, $parameters);
     }
