@@ -1,7 +1,12 @@
 {
     "name": "saintsweeto/hunterio",
     "description": "A PHP wrapper for Hunter.io v2 API",
-    "keywords": ["hunterio"],
+    "type": "library",
+    "keywords": [
+        "hunter.io",
+        "hunter-php",
+        "hunter-sdk"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -9,16 +14,12 @@
             "email": "emjohnramos@gmail.com"
         }
     ],
-    "type": "library",
     "require": {
-        "php": ">=5.5",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.5"
     },
     "autoload": {
         "psr-4": {
-            "Hiraya\\": "src/"
+            "Hiraya\\": ""
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
