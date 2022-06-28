@@ -4,6 +4,11 @@ A PHP wrapper for Hunter v2 API.
 
 ## Getting Started
 
+### Install
+```
+composer require saintsweeto/hunterio
+```
+
 
 ### Initialization
 ```
